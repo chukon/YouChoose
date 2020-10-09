@@ -145,7 +145,6 @@ function getCityID() {
 $("#select-city").on("click", function (event) {
   // creating the on click event to take in the user input city value
  // event.preventDefault();
- alert("Hello");
   var inputCity = $("#city-input").val().trim();
 alert(inputCity);
   searchWeather(inputCity);
