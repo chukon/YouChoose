@@ -138,7 +138,7 @@ function getCityID() {
       });
     }
 
-    //getRestaurants(userCity);
+    getRestaurants(userCity);
   });
 }
 
