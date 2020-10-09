@@ -1,19 +1,4 @@
-// PSEUDO CODE
-/* 
-Create skeleton structure of HTML page
-Create user input on HTML page for entering “City” or “Zip”
-Create variable in js to map user input to
-Create query link documentation within HTML (Weather & Restaurant)a
-Console.log response to locate which data types we can access
-Define variables for data we want to access
-Figure out how to map user input to location on weather API so we can populate their current weather
-Test getting this weather to show up on the HTML page using on click event when the user enters their input
-Figure out to get a random restaurant from the weather matched array to display on the HTML screen below the weather (this would give the user a restaurant response based on their city input and current weather conditions)
-Page should refresh with the user city name at the top, followed by “Your Current Weather Status is…” and have the weather stats show, followed by “Based on your weather, we recommend eating at....” and display the restaurant name/logo that they can click on and will lead them to the restaurant website.
-Allow user to click “get another option” if they don’t like the current restaurant selection (this is extra, not necessary for MVP)
-Add extra css styling once all functionality is working properly (potentially create a quick logo to use on page and favicon, populate nice color scheme, and UX friendly design.
-*/
-
+//Where2Eat
 
 function searchWeather(name) {
   var APIKey = "e79e860f1526eb9cc2572046fff7a30c"; // currently Alex's API key
@@ -87,7 +72,7 @@ function getCityID() {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "user-key": "6be02bb0652cc2706beef4c9ffe979b1",
+      "user-key": "e27ebe249bf6837584304788457085eb",
     },
   }).then(function (response) {
     console.log(response.location_suggestions[0].id);
@@ -105,7 +90,7 @@ function getCityID() {
         method: "GET",
         headers: {
           Accept: "application/json",
-          "user-key": "6be02bb0652cc2706beef4c9ffe979b1",
+          "user-key": "e27ebe249bf6837584304788457085eb",
         },
       }).then(function (response) {
         var randomInd = Math.floor(Math.random() * 20);
