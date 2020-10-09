@@ -146,8 +146,15 @@ $("#select-city").on("click", function (event) {
   // creating the on click event to take in the user input city value
  event.preventDefault();
   var inputCity = $("#city-input").val().trim();
-  window.location.reload();.
+  clearDiv("restaurantinfo-div");
 //alert(inputCity);
   searchWeather(inputCity);
   getCityID(inputCity);
 });
+function clearDiv(elementID) { 
+            var div = document.getElementById(elementID); 
+              
+            while(div.firstChild) { 
+                div.removeChild(div.firstChild); 
+            } 
+        } 
