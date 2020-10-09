@@ -131,10 +131,11 @@ function getCityID() {
         restaurantEl.attr("target", "_blank");
         locLink.attr("href", "https://google.com/maps/place/" + restLocation.replace(/\s+/g, "+"));
         locLink.attr("target", "_blank");
-        $("#restaurantinfo-div").clear;
-        document.getElementById("restaurantinfo-div").innerHTML = restaurantEl;
+        //$("#restaurantinfo-div").clear;
+        //document.getElementById("restaurantinfo-div").innerHTML = restaurantEl;
+        $("#estaurantinfo-div").html("");
         //alert("OK" + "<br>" + restaurantEl + "<br>" + locLink + "<br>" + ratingEl + "<br>" + cuisineEl + "<br>" + menuEl + "<br>" + timingEl + "<br>" + featImg);
-        //$("#restaurantinfo-div").append(restaurantEl,"<br>" , locLink, ratingEl, cuisineEl, menuEl, timingEl, featImg);
+        $("#restaurantinfo-div").append(restaurantEl,"<br>" , locLink, ratingEl, cuisineEl, menuEl, timingEl, featImg);
        // document.getElementById("restaurantinfo-div").innerHTML = "OK" + "<br>" + restaurantEl + "<br>" + locLink + "<br>" + ratingEl + "<br>" + cuisineEl + "<br>" + menuEl + "<br>" + timingEl + "<br>" + featImg;
       });
     }
