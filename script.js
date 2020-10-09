@@ -51,7 +51,7 @@ function searchWeather(name) {
           $("body").css("background-image", "url(./Assets/snow.jpg)");
           break;
         Default:
-          $("body").css("background-image", "url(https://img.pngio.com/pattern-red-fast-food-background-tile-1045-red-food-background-png-400_400.png)");
+          $("body").css("background-image", "url(./Assets/food.jpg)");
           break;
       }
       
