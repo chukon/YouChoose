@@ -1,7 +1,7 @@
 //Where2Eat
 
 function searchWeather(name) {
-  var APIKey = "e79e860f1526eb9cc2572046fff7a30c"; // currently Alex's API key
+  var APIKey = "88679b3ed150543b880c7b4c2f742ac1"; // currently Alex's API key
   var userInput = $("#city-input").val();
   // building URL we need to access API
   var queryURL =
